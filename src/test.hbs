@@ -1,0 +1,21 @@
+<ul class="country-search__list">
+{{#each obj.country}}
+<li class="country-search__country"><h1>{{this}}</h1></li>
+{{/each}}
+{{#if obj.countries}}
+<ul class="country-search__one-country-offer">
+<div class="country-search__one-country-wrapper">
+    <li class="country-search__capital"><h2>Столица: {{obj.capital}}</h2></li>
+    <li class="country-search__polulation"><h2>Популяция: {{obj.population}}</h2></li>
+    <li>
+        <ul><h2>Языки:</h2></ul>
+        {{#each obj.nativeName}}
+        <li><h3>{{this}}</h3></li>
+        {{/each}}
+    </li>
+</div>
+<li class="country-search__flag"><img src="{{obj.flag}}" alt="{{obj.country}}-flag"></li>
+
+{{/if}}
+</ul>
+</ul>
