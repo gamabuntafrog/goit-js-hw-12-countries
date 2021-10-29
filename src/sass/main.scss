@@ -45,5 +45,9 @@ h3 {
 }
 
 .pnotify {
-  display: none;
+  position: absolute;
+  transform: translateY(200%);
+  height: 50px;
+  background-color: brown;
+  text-align: center;
 }

@@ -39,7 +39,7 @@ input.addEventListener('input', debounce(() => {
 
 const TooMuchCountries = () => {
     notice({
-        title: "",
+        title: "Введите назване поконкретнее",
         text: "",
         modules: new Map([
             ...defaultModules,
